@@ -1,0 +1,90 @@
+{
+  "kind": "collectionType",
+  "collectionName": "property_listings",
+  "info": {
+    "singularName": "property-listing",
+    "pluralName": "property-listings",
+    "displayName": "property-listing"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "house",
+        "apartment",
+        "condo",
+        "commercial"
+      ]
+    },
+    "bedrooms": {
+      "type": "integer"
+    },
+    "bathrooms": {
+      "type": "integer"
+    },
+    "area": {
+      "type": "integer"
+    },
+    "area_unit": {
+      "type": "enumeration",
+      "enum": [
+        "Square Metre",
+        "Square Foot",
+        "Hectare",
+        "Acre",
+        "Square Kilometre"
+      ]
+    },
+    "address": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "geolocation": {
+      "type": "json"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "featured_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
